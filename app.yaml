@@ -1,0 +1,10 @@
+application: no-firewall
+version: 1_2
+runtime: python
+api_version: 1
+
+handlers:
+
+- url: /.*
+  script: mirror.py
+  secure: optional
